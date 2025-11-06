@@ -1,13 +1,17 @@
 import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { Task } from './copmonents/task/task';
+import { Task } from './components/task/task';
 import { CommonModule } from '@angular/common';
+import { PlantMonitor } from './components/plant-monitor/plant-monitor';
+import { Clock } from './components/clock/clock';
 
 @Component({
   selector: 'app-root',
   imports: [
     RouterOutlet
     , Task
+    , PlantMonitor
+    , Clock
     , CommonModule
   ],
   templateUrl: './app.html',
