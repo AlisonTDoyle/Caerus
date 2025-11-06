@@ -1,0 +1,7 @@
+<h4><input type="checkbox" checked="{{task?.completed == true}}"> {{task?.title}}</h4>
+<p>{{task?.description}}</p>
+<ul class="" *ngFor="let t of task?.tasks">
+    <li>
+        <app-task [task]="t"></app-task>
+    </li>
+</ul>
