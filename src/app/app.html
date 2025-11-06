@@ -1,9 +1,23 @@
-<main>
-  <ul class="" *ngFor="let t of sampleTasks">
-    <li>
-      <app-task [task]="t"></app-task>
-    </li>
-  </ul>
-  <app-plant-monitor></app-plant-monitor>
-  <app-clock></app-clock>
+<main class="center-all-axis">
+  <div class="container">
+    <div class="row">
+      <div class="col border border-secondary-subtle rounded m-1">
+        <ul class="" *ngFor="let t of sampleTasks">
+          <li>
+            <app-task [task]="t"></app-task>
+          </li>
+        </ul>
+      </div>
+      <div class="col">
+        <div class="row">
+          <div class="col-xl m-1 border border-secondary-subtle rounded">
+            <app-plant-monitor></app-plant-monitor>
+          </div>
+          <div class="col-xl m-1 border border-secondary-subtle rounded">
+            <app-clock></app-clock>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </main>
